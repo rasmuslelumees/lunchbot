@@ -57,9 +57,6 @@ const fhoone = new FacebookSource('house', 'F-Hoone', 'Fhoone', params);
 // Kukeke, occassionally has an offer posted
 const kukeke = new FacebookSource('rooster', 'Kukeke', 'kukekene', params);
 
-// Foody Allen, sometimes posts
-const allen = new FacebookSource('boy', 'Foody Allen', 'foodyallenrestoran', params);
-
 // Trühvel, special because only posts once a week (on Mondays)
 const truhvel = new FacebookSource('coffee', 'Trühvel', '1829502837275034', params);
 
