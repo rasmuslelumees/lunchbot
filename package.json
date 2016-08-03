@@ -1,9 +1,6 @@
 {
   "name": "lunchbot",
   "version": "1.0.0",
-  "engines": {
-    "npm": "2.15.x"
-  },
   "description": "Simple Slack Bot for scraping lunch menus",
   "main": "index.js",
   "scripts": {
