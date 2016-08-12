@@ -38,6 +38,15 @@ var params = {
     ]
 };
 
+var imageParams = {
+	chains: [
+		{
+			parser: Parsers.imageOnly,
+			filter: Filters.sameDay
+		}
+	]
+};
+
 //
 //  Sources
 //
@@ -63,7 +72,10 @@ const kukeke = new FacebookSource('rooster', 'Kukeke', 'kukekene', params);
 // Trühvel, special because only posts once a week (on Mondays)
 const truhvel = new FacebookSource('coffee', 'Trühvel', '1829502837275034', params);
 
-const services = [frenchy, latabla, kpk, apelsin, fhoone, truhvel, kukeke];
+// Lendav Taldrik
+const lendav = new FacebookSource('satellite_antenna', 'Lendav Taldrik', '389723857828746', imageParams);
+
+const services = [frenchy, latabla, kpk, apelsin, fhoone, truhvel, kukeke, lendav];
 console.log('Starting LunchBot with ' + services.length + ' services');
 
 bot.services = services;
