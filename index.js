@@ -72,8 +72,8 @@ const kukeke = new FacebookSource('rooster', 'Kukeke', 'kukekene', params);
 // Trühvel, special because only posts once a week (on Mondays)
 const truhvel = new FacebookSource('coffee', 'Trühvel', '1829502837275034', params);
 
-//Fabrik
-const fabrik = new FacebookSource('gear', 'Fabrik', 'fabrikresto', params);
+//Fabrik / Gustav Kalamaja
+const fabrik = new FacebookSource('gear', 'Gustav Kalamaja', 'gustavkalamaja', params);
 
 // Lendav Taldrik
 const lendav = new FacebookSource('satellite_antenna', 'Lendav Taldrik', '389723857828746', imageParams);
