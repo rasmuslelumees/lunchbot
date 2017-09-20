@@ -58,7 +58,7 @@ const frenchy = new FacebookSource('fr', 'Frenchy', "593232130762873", params);
 const latabla = new FacebookSource('es', 'La Tabla', "827767180609816", params);
 
 // KPK
-//const kpk = new FacebookSource('scissors', 'Kivi Paber Käärid', 'kivipaberkaarid', params);
+const kpk = new FacebookSource('scissors', 'Kivi Paber Käärid', 'kivipaberkaarid', params);
 
 // Apelsini Raudtee
 const apelsin = new FacebookSource('tangerine', 'Apelsini Raudtee', 'apelsiniraudtee', params);
@@ -78,7 +78,7 @@ const fabrik = new FacebookSource('gear', 'Gustav Kalamaja', 'gustavkalamaja', p
 // Lendav Taldrik
 const lendav = new FacebookSource('satellite_antenna', 'Lendav Taldrik', '389723857828746', imageParams);
 
-const services = [frenchy, latabla, apelsin, fhoone, truhvel, karbes, fabrik, lendav];
+const services = [frenchy, latabla, kpk, apelsin, fhoone, truhvel, karbes, fabrik, lendav];
 console.log('Starting LunchBot with ' + services.length + ' services');
 
 bot.services = services;
