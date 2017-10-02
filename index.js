@@ -55,7 +55,7 @@ var imageParams = {
 const frenchy = new FacebookSource('fr', 'Frenchy', "593232130762873", params);
 
 // La Tabla
-const latabla = new FacebookSource('es', 'La Tabla', "827767180609816", params);
+const latabla = new FacebookSource('taco', 'La Tabla', "827767180609816", params);
 
 // KPK
 const kpk = new FacebookSource('scissors', 'Kivi Paber Käärid', 'kivipaberkaarid', params);
