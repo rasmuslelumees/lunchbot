@@ -51,34 +51,13 @@ var imageParams = {
 //  Sources
 //
 
-// Frenchy
-const frenchy = new FacebookSource('fr', 'Frenchy', "593232130762873", params);
-
-// La Tabla
-const latabla = new FacebookSource('taco', 'La Tabla', "827767180609816", params);
-
-// KPK
-const kpk = new FacebookSource('scissors', 'Kivi Paber Käärid', 'kivipaberkaarid', params);
-
 // Apelsini Raudtee
 const apelsin = new FacebookSource('tangerine', 'Apelsini Raudtee', 'apelsiniraudtee', params);
+const sesoon = new FacebookSource('fork_and_knife', 'Sesoon', 'KohvikSesoon', params);
+//const korsten = new FacebookSource('tokyo_tower', 'Korsten', 'Korstenresto', params);
+const uulits = new FacebookSource('hamburger', 'Uulits', 'uulitsrestoran', params);
 
-// F-Hoone
-const fhoone = new FacebookSource('house', 'F-Hoone', 'Fhoone', params);
-
-// Kärbes
-const karbes = new FacebookSource('bee', 'Kärbes', 'karbeskitchenandbar', params);
-
-// Trühvel, special because only posts once a week (on Mondays)
-const truhvel = new FacebookSource('coffee', 'Trühvel', '1829502837275034', params);
-
-//Fabrik / Gustav Kalamaja
-const fabrik = new FacebookSource('gear', 'Gustav Kalamaja', 'gustavkalamaja', params);
-
-// Lendav Taldrik
-const lendav = new FacebookSource('satellite_antenna', 'Lendav Taldrik', '389723857828746', imageParams);
-
-const services = [frenchy, latabla, kpk, apelsin, fhoone, truhvel, karbes, fabrik, lendav];
+const services = [sesoon, apelsin, uulits];
 console.log('Starting LunchBot with ' + services.length + ' services');
 
 bot.services = services;
