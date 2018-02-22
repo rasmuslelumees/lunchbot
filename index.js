@@ -51,13 +51,14 @@ var imageParams = {
 //  Sources
 //
 
-// Apelsini Raudtee
-const apelsin = new FacebookSource('tangerine', 'Apelsini Raudtee', 'apelsiniraudtee', params);
 const sesoon = new FacebookSource('fork_and_knife', 'Sesoon', 'KohvikSesoon', params);
+const apelsin = new FacebookSource('tangerine', 'Apelsini Raudtee', 'apelsiniraudtee', params);
+const truhvel = new FacebookSource('coffee', 'Trühvel', '1829502837275034', params);
 //const korsten = new FacebookSource('tokyo_tower', 'Korsten', 'Korstenresto', params);
 const uulits = new FacebookSource('hamburger', 'Uulits', 'uulitsrestoran', params);
+const lendav = new FacebookSource('satellite_antenna', 'Lendav Taldrik', '389723857828746', imageParams);
 
-const services = [sesoon, apelsin, uulits];
+const services = [sesoon, apelsin, truhvel, uulits, lendav];
 console.log('Starting LunchBot with ' + services.length + ' services');
 
 bot.services = services;
